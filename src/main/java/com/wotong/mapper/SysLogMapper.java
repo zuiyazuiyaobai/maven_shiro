@@ -1,0 +1,13 @@
+package com.wotong.mapper;
+
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.wotong.model.SysLog;
+
+/**
+ *
+ * SysLog 表数据库控制层接口
+ *
+ */
+public interface SysLogMapper extends BaseMapper<SysLog> {
+
+}
