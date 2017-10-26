@@ -5,11 +5,11 @@
 
 界面基于EasyUI，图标采用较为开放的`Foundation Icon`(MIT协议)。
 
-`WIKI vs 文档`：http://git.oschina.net/wotong/spring-shiro-training/wikis/Home
+`WIKI vs 文档`：http://git.oschina.net/wangzhixuan/spring-shiro-training/wikis/Home
 
 `文档vs思维导图`：[开源项目spring-shiro-training思维导图，让项目不再难懂](https://my.oschina.net/u/3080373/blog/875697)
 
-`代码生成详见`：[src/test/java/com/wotong/generator/MysqlGenerator](http://git.oschina.net/wotong/spring-shiro-training/tree/master/src/test/java/com/wotong/generator)
+`代码生成详见`：[src/test/java/com/wangzhixuan/generator/MysqlGenerator](http://git.oschina.net/wangzhixuan/spring-shiro-training/tree/master/src/test/java/com/wangzhixuan/generator)
 
 更多`shiro`的教程请参考（开涛博客`《跟我学Shiro》`）：http://jinnianshilongnian.iteye.com/category/305053
 
@@ -75,7 +75,7 @@
 QQ群：523720304 &nbsp; 不提供全权限账号，人多手杂，维护时间有限，可本地导入项目运行，admin密码和test一样，谢谢。
 </p>
 <p>
-git地址：<a href="https://git.oschina.net/wotong/spring-shiro-training.git" target="_blank">https://git.oschina.net/wotong/spring-shiro-training.git</a>
+git地址：<a href="https://git.oschina.net/wangzhixuan/spring-shiro-training.git" target="_blank">https://git.oschina.net/wangzhixuan/spring-shiro-training.git</a>
 </p>
 <p>
 欢迎star、fork，不好的地方，接受狂喷，本着共同学习的心态。
@@ -113,4 +113,4 @@ git地址：<a href="https://git.oschina.net/wotong/spring-shiro-training.git" t
 ( The MIT License )
 
 ！！！！！！！！！！！！！！！
-wotong
+wangzhixuan
