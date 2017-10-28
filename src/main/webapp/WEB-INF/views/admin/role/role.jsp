@@ -67,7 +67,7 @@
                 }
             } ] ],
             onLoadSuccess:function(data){
-                $('.role-easyui-linkbutton-ok').linkbutton({text:'授权111'});
+                $('.role-easyui-linkbutton-ok').linkbutton({text:'授权'});
                 $('.role-easyui-linkbutton-edit').linkbutton({text:'编辑'});
                 $('.role-easyui-linkbutton-del').linkbutton({text:'删除'});
             },
@@ -105,7 +105,7 @@
             height : 300,
             href : '${path }/role/editPage?id=' + id,
             buttons : [ {
-                text : '确定111',
+                text : '确定',
                 handler : function() {
                     parent.$.modalDialog.openner_dataGrid = roleDataGrid;//因为添加成功之后，需要刷新这个dataGrid，所以先预定义好
                     var f = parent.$.modalDialog.handler.find('#roleEditForm');
