@@ -67,7 +67,7 @@
                 }
             } ] ],
             onLoadSuccess:function(data){
-                $('.role-easyui-linkbutton-ok').linkbutton({text:'授权'});
+                $('.role-easyui-linkbutton-ok').linkbutton({text:'授权111'});
                 $('.role-easyui-linkbutton-edit').linkbutton({text:'编辑'});
                 $('.role-easyui-linkbutton-del').linkbutton({text:'删除'});
             },
