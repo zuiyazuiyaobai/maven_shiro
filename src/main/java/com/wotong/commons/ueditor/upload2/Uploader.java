@@ -1,4 +1,4 @@
-package com.wotong.commons.ueditor.upload2;
+package com.wotong.commons.ueditor.upload;
 
 import com.wotong.commons.ueditor.ActionConfig;
 import com.wotong.commons.ueditor.define.State;
