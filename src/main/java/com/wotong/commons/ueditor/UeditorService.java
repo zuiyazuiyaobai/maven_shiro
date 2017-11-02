@@ -15,9 +15,9 @@ import com.wotong.commons.utils.JsonUtils;
 import com.wotong.commons.utils.StringUtils;
 
 public class UeditorService {
-	@Autowired 
+	@Autowired
 	private UeditorManager ueditorManager;
-	
+
 	public String exec(HttpServletRequest request) {
 		String callbackName = request.getParameter("callback");
 		if (callbackName != null) {
@@ -34,7 +34,7 @@ public class UeditorService {
 		String actionType = request.getParameter("action");
 		String rootPath = request.getServletContext().getRealPath("/");
 		String ctxPath  = request.getContextPath();
-		
+
 		if (actionType == null || !ActionMap.mapping.containsKey(actionType)) {
 			return new BaseState(false, AppInfo.INVALID_ACTION).toJSONString();
 		}
@@ -43,7 +43,7 @@ public class UeditorService {
 		}
 
 		IUeditorFileManager fileManager = ueditorManager.getFileManager();
-		
+
 		State state = null;
 		int actionCode = ActionMap.getType(actionType);
 		ActionConfig conf = null;
