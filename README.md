@@ -1,5 +1,5 @@
 ﻿# Spring Shiro学习系统
-
+666
 ## 简介
 基于springmvc、spring、mybatis-plus、shiro、easyui、Log4j2简单实用的权限系统。
 
@@ -113,4 +113,4 @@ git地址：<a href="https://git.oschina.net/wangzhixuan/spring-shiro-training.g
 ( The MIT License )
 
 ！！！！！！！！！！！！！！！
-wangzhixuan
+           wangzhixuan
