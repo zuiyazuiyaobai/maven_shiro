@@ -183,9 +183,16 @@
             } ]
         });
     }
+
+    function aaa(){
+        alert(11);
+        $.post("${path}/resource/tree",{},function (data) {
+            console.log(data);
+        },"json");
+    }
 </script>
 </head>
-<body>
+<body><input type="button" value="aaa" onclick="aaa()">
     <div id="loading" style="position: fixed;top: -50%;left: -50%;width: 200%;height: 200%;background: #fff;z-index: 100;overflow: hidden;">
         <img src="${staticPath }/static/style/images/ajax-loader.gif" style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;"/>
     </div>
@@ -194,7 +201,7 @@
             <div>
                 <span style="float: right; padding-right: 20px; margin-top: 15px; color: #333">
                     <i class="fi-torso"></i>
-                    <b><shiro:principal></shiro:principal></b>&nbsp;&nbsp; 
+                    <b><shiro:principal></shiro:principal></b>&nbsp;&nbsp;
                     <shiro:hasPermission name="/user/editPwdPage">
                         <a href="javascript:void(0)" onclick="editUserPwd()" class="easyui-linkbutton" plain="true" icon="fi-unlock" >修改密码</a>
                     </shiro:hasPermission>&nbsp;&nbsp;
