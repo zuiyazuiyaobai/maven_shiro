@@ -24,6 +24,8 @@
         <commons-io.version>2.5</commons-io.version>
         <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
         <poi.version>3.16</poi.version>
+        <swagger.version>1.5.10</swagger.version>
+        <springfox.version>2.5.0</springfox.version>
     </properties>
 
     <dependencies>
@@ -183,6 +185,28 @@
             <version>2.9.0</version>
         </dependency>
          -->
+
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-spring-web -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-spring-web</artifactId>
+            <version>${springfox.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

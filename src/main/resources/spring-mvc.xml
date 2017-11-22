@@ -89,4 +89,13 @@
           depends-on="lifecycleBeanPostProcessor">
           <property name="proxyTargetClass" value="true"/>
     </bean>
+
+
+    <!-- 默认跳转管理员首页，因为没有权限会跳转至登录页 -->
+    <mvc:view-controller path="/" view-name="redirect:swagger-ui.html" />
+
+    <!-- Swagger文档 -->
+    <bean id="swagger2Config" class="com.wotong.config.SwaggerConfig" />
+    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
 </beans>
