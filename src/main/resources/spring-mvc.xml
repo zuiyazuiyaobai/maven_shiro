@@ -77,7 +77,7 @@
     <bean class="com.wotong.commons.ueditor.UeditorService"/>
     <!-- 使用spring servlet3.0 默认上传 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
-    
+
     <!-- 启用shrio 控制器授权注解拦截方式 -->
     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
         <property name="securityManager" ref="securityManager"/>

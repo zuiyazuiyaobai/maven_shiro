@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 
 import com.wotong.commons.base.BaseController;
 import com.wotong.model.Organization;
@@ -23,6 +26,7 @@ import com.wotong.service.IOrganizationService;
  */
 @Controller
 @RequestMapping("/organization")
+@Api(tags = "部门管理接口管理")
 public class OrganizationController extends BaseController {
 
     @Autowired
@@ -34,6 +38,7 @@ public class OrganizationController extends BaseController {
      * @return
      */
     @GetMapping(value = "/manager")
+    @ApiOperation(value = "部门管理主页")
     public String manager() {
         return "admin/organization/organization";
     }
@@ -56,6 +61,7 @@ public class OrganizationController extends BaseController {
      */
     @RequestMapping("/treeGrid")
     @ResponseBody
+    @ApiOperation(value = "部门列表")
     public Object treeGrid() {
         return organizationService.selectTreeGrid();
     }
@@ -87,7 +93,7 @@ public class OrganizationController extends BaseController {
     /**
      * 编辑部门页
      *
-     * @param request
+     * @param
      * @param id
      * @return
      */

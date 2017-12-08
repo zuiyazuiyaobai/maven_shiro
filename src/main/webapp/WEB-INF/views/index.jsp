@@ -190,9 +190,29 @@
             console.log(data);
         },"json");
     }
+    function upload(){
+        $("form").attr('action', "/servlet/file/upload");
+        $("form").submit();
+    }
 </script>
 </head>
 <body><input type="button" value="aaa" onclick="aaa()">
+
+<%--<form method="post" enctype="multipart/form-data">--%>
+
+    <%--选择要上传的文件：<input type="file" name="file" size="60" /><br/>--%>
+
+    <%--<br/> <!-- <input type="submit" value="开始上传" /> -->--%>
+<%--</form>--%>
+
+<%--<input type="button" value="上传吧" onclick="upload()"/>--%>
+
+
+<form method="post" action="/servlet/file/upload" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <button type="submit" >提交</button>
+</form>
+<hr>
     <div id="loading" style="position: fixed;top: -50%;left: -50%;width: 200%;height: 200%;background: #fff;z-index: 100;overflow: hidden;">
         <img src="${staticPath }/static/style/images/ajax-loader.gif" style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;"/>
     </div>
