@@ -100,19 +100,20 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     @Override
     public void selectDataGrid(PageInfo pageInfo) {
-//        Page<Map<String, Object>> page = new Page<Map<String, Object>>(pageInfo.getNowpage(), pageInfo.getSize());
-//        page.setOrderByField(pageInfo.getSort());
-//        page.setAsc(pageInfo.getOrder().equalsIgnoreCase("asc"));
-//        List<Map<String, Object>> list = userMapper.selectUserPage(page, pageInfo.getCondition());
-//        pageInfo.setRows(list);
-//        pageInfo.setTotal(page.getTotal());
-        Page<User> page = new Page<User>(pageInfo.getNowpage(), pageInfo.getSize());
-        EntityWrapper<User> wrapper = new EntityWrapper<User>();
-        wrapper.orderBy(pageInfo.getSort(), pageInfo.getOrder().equalsIgnoreCase("ASC"));
-        selectPage(page, wrapper);
-
-        pageInfo.setRows(page.getRecords());
+        Page<Map<String, Object>> page = new Page<Map<String, Object>>(pageInfo.getNowpage(), pageInfo.getSize());
+        page.setOrderByField(pageInfo.getSort());
+        page.setAsc(pageInfo.getOrder().equalsIgnoreCase("asc"));
+        List<Map<String, Object>> list = userMapper.selectUserPage(page, pageInfo.getCondition());
+        pageInfo.setRows(list);
         pageInfo.setTotal(page.getTotal());
+//        Page<User> page = new Page<User>(pageInfo.getNowpage(), pageInfo.getSize());
+//        EntityWrapper<User> wrapper = new EntityWrapper<User>();
+//        wrapper.where("id != {0}", pageInfo.getCondition());
+//        wrapper.orderBy(pageInfo.getSort(), pageInfo.getOrder().equalsIgnoreCase("ASC"));
+//        selectPage(page, wrapper);
+//
+//        pageInfo.setRows(page.getRecords());
+//        pageInfo.setTotal(page.getTotal());
     }
 
     @Override
