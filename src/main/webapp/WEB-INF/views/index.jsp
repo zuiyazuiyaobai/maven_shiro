@@ -212,6 +212,11 @@
     <input type="file" name="file"/>
     <button type="submit" >提交</button>
 </form>
+
+<form method="post" action="/file/upload" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <button type="submit" >提交22</button>
+</form>
 <hr>
     <div id="loading" style="position: fixed;top: -50%;left: -50%;width: 200%;height: 200%;background: #fff;z-index: 100;overflow: hidden;">
         <img src="${staticPath }/static/style/images/ajax-loader.gif" style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;"/>
